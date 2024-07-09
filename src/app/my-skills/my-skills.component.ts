@@ -19,6 +19,14 @@ export class MySkillsComponent {
     'api',
     'scrum',
     'material-design',
+    'python',
+    'django',
+    'linux',
+    'redis',
+    'postgresql',
+    'heroku',
+    'sql',
+    'cloud',
   ];
   descriptions: string[] = [
     'Angular',
@@ -31,6 +39,14 @@ export class MySkillsComponent {
     'Rest-Api',
     'Scrum',
     ' Material Design',
+    'Python',
+    'Django',
+    'Linux',
+    'Redis',
+    'PostgreSQL',
+    'Heroku',
+    'SQL',
+    'Cloud',
   ];
 
   /**

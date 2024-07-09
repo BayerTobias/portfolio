@@ -39,6 +39,8 @@ section {
   gap: 34px;
   position: relative;
   max-width: 40vw;
+  min-width: 30vw;
+  min-width: 30svw;
   scale: 0;
 
   @media screen and (max-width: 900px) {

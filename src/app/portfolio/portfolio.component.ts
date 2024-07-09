@@ -13,7 +13,6 @@ export class PortfolioComponent {
   technologies: string[] = [
     'JavaScript | HTML | CSS',
     'JavaScript | HTML | CSS',
-
     'Angular | TypeScript | HTML | CSS | Firebase',
   ];
 
@@ -32,7 +31,7 @@ export class PortfolioComponent {
   githubLinks: string[] = [
     'https://github.com/BayerTobias/join',
     'https://github.com/BayerTobias/SpaceGame',
-    'https://github.com/BayerTobias/Ring-of-Fire', // ändern für dabubble
+    'https://github.com/BayerTobias/DABubble', // ändern für dabubble
   ];
 
   images: string[] = [
