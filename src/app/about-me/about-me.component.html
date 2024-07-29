@@ -1,9 +1,4 @@
 <section (appear)="inVision()" id="about-me">
-  <img
-    class="shadow no-pointer-events"
-    src="./assets/img/shadows/purple-shadow-1.svg"
-    alt="purple-shadow-1"
-  />
   <div class="left-wrapper" [ngClass]="{ scrolledBy: scrolledBy }">
     <h2 translate>About me</h2>
     <div>
@@ -12,7 +7,10 @@
         Nuernberg.
       </p>
       <div>
-        <img src="./assets/img/icons/bulb-icon.svg" alt="bulb" />
+        <div class="bulb-wrapper">
+          <img src="./assets/img/icons/bulb-icon.svg" alt="bulb" />
+        </div>
+
         <p translate>
           my passion for IT brought me to the 'Developer Academy' in Munich.
           During my time there, I established a strong knowledge base in

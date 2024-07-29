@@ -1,6 +1,6 @@
 section {
   padding: 100px 100px;
-  border-top: 2px solid var(--green);
+  // border-top: 2px solid var(--secondaryColor);
   background-color: var(--darkBlueBg);
   display: flex;
   justify-content: space-between;
@@ -32,6 +32,20 @@ section {
     }
   }
 
+  .vector {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    width: 100svw;
+    top: 0;
+    height: 100px;
+    z-index: -1;
+
+    @media screen and (max-width: 900px) {
+      top: -50px;
+    }
+  }
+
   .imprint-link {
     text-decoration: none;
     color: white;
@@ -45,7 +59,7 @@ section {
       left: 0;
       width: 25px;
 
-      border-bottom: 2px solid var(--lightBlue);
+      border-bottom: 2px solid var(--primaryColor);
     }
   }
 

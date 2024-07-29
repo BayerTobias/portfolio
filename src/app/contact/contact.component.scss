@@ -14,17 +14,6 @@ section {
   @media screen and (max-width: 900px) {
     padding: 150px 12px;
   }
-
-  .shadow {
-    position: absolute;
-    left: -400px;
-    bottom: -400px;
-    rotate: 45deg;
-
-    @media screen and (max-width: 900px) {
-      width: 500px;
-    }
-  }
 }
 
 .headline {
@@ -34,7 +23,7 @@ section {
   scale: 0;
 
   .contact-seperator {
-    border: 2px solid var(--purple);
+    border: 2px solid var(--secondaryColor);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     position: absolute;
@@ -70,9 +59,15 @@ section {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    color: white;
+    color: var(--copyLight);
     max-width: 40vw;
     scale: 0;
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--primaryColor);
+    }
 
     @media screen and (max-width: 900px) {
       max-width: 100%;
@@ -126,23 +121,23 @@ section {
       width: 100%;
       padding: 15px 25px;
       border-radius: 10px;
-      border: 1px solid var(--purple);
+      border: 1px solid var(--copyLight);
       background-color: var(--darkBlueBg);
-      color: white;
+      color: var(--copyLight);
       font-family: "Poppins", sans-serif;
       outline: transparent;
       font-size: 16px;
 
       &::placeholder {
-        color: white;
+        color: var(--copyLight);
       }
 
       &:hover {
-        border-color: var(--green);
+        border-color: var(--secondaryColor);
       }
 
       &:focus {
-        border-color: var(--green);
+        border-color: var(--secondaryColor);
       }
     }
 
@@ -152,23 +147,23 @@ section {
       height: 250px;
       padding: 15px 25px;
       border-radius: 10px;
-      border: 1px solid var(--purple);
+      border: 1px solid var(--copyLight);
       background-color: var(--darkBlueBg);
-      color: white;
+      color: var(--copyLight);
       font-family: "Poppins", sans-serif;
       outline: transparent;
       font-size: 16px;
 
       &::placeholder {
-        color: white;
+        color: var(--copyLight);
       }
 
       &:hover {
-        border-color: var(--green);
+        border-color: var(--secondaryColor);
       }
 
       &:focus {
-        border-color: var(--green);
+        border-color: var(--secondaryColor);
       }
     }
   }
@@ -186,11 +181,11 @@ section {
       > div {
         display: flex;
         gap: 10px;
-        color: white;
+        color: var(--copyLight);
 
         a {
           text-decoration: none;
-          color: var(--purple);
+          color: var(--primaryColor);
         }
       }
 
@@ -203,9 +198,9 @@ section {
     button {
       border: unset;
       font-size: 23px;
-      color: white;
+      color: var(--copyLight);
       border-radius: 10px;
-      background-color: var(--green);
+      background-color: var(--primaryColor);
       padding: 15px 30px;
       cursor: pointer;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -213,12 +208,13 @@ section {
       transform-origin: top center;
 
       &:hover {
-        background-color: var(--purple);
-        scale: 1.2;
+        background-color: var(--secondaryColor);
+        color: var(--darkBlueBg);
+        scale: 1.1;
       }
 
       &:active {
-        background-color: var(--green);
+        background-color: var(--primaryColor);
         transition: none;
       }
     }
@@ -238,21 +234,21 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid var(--primaryColor);
     border-radius: 50%;
     padding: 8px;
     transition: all ease-in-out 225ms;
 
     &:hover {
-      border-color: var(--green);
+      border-color: var(--secondaryColor);
     }
 
     &:hover svg {
-      fill: var(--green);
+      fill: var(--secondaryColor);
     }
 
     svg {
-      fill: white;
+      fill: var(--primaryColor);
       transition: fill ease-in-out 225ms;
     }
   }

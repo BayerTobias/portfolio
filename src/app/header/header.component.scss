@@ -1,5 +1,5 @@
 section {
-  color: white;
+  color: var(--copyLight);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@ section {
     cursor: pointer;
 
     &:hover {
-      color: var(--green);
+      color: var(--secondaryColor);
     }
   }
 }
@@ -47,13 +47,13 @@ section {
   }
 
   a {
-    color: white;
+    color: var(--copyLight);
     text-decoration: none;
     font-size: 23px;
     transition: color ease-in-out 125ms;
 
     &:hover {
-      color: var(--green);
+      color: var(--secondaryColor);
     }
   }
 }
@@ -67,7 +67,7 @@ section {
   justify-content: space-between;
 
   > div {
-    border: 1px solid white;
+    border: 1px solid var(--copyLight);
     transition: all 225ms ease-in-out;
     transform-origin: left;
     width: 20px;
@@ -95,8 +95,8 @@ section {
 }
 
 .active {
-  color: var(--green) !important;
-  border-bottom: 2px solid var(--purple);
+  color: var(--primaryColor) !important;
+  border-bottom: 2px solid var(--copyLight);
 }
 
 .mobile-overlay {

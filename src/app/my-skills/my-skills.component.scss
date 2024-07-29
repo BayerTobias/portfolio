@@ -4,7 +4,7 @@ section {
   gap: 36px;
   background-color: var(--darkBlueBg);
   padding: 150px 100px 0px 100px;
-  color: white;
+  color: var(--copyLight);
   position: relative;
   z-index: 1;
 
@@ -16,31 +16,15 @@ section {
     padding: 150px 12px 0px 12px;
     flex-direction: column-reverse;
   }
-
-  .shadow {
-    position: absolute;
-    rotate: -90deg;
-    top: 0;
-    left: -490px;
-    z-index: 1;
-
-    @media screen and (max-width: 900px) {
-      top: 300px;
-      width: 600px;
-      left: -300px;
-    }
-  }
 }
 
 .right-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 34px;
   position: relative;
   max-width: 40vw;
-  min-width: 30vw;
-  min-width: 30svw;
+  min-width: 30%;
   scale: 0;
 
   @media screen and (max-width: 900px) {
@@ -54,7 +38,7 @@ section {
 
     .my-skills-seperator {
       position: absolute;
-      border: 2px solid var(--purple);
+      border: 2px solid var(--secondaryColor);
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
       width: 50px;
@@ -66,14 +50,14 @@ section {
       }
 
       @media screen and (max-width: 900px) {
-        width: 10px;
+        width: 36px;
         right: -12px;
       }
     }
   }
 
   p {
-    text-align: end;
+    color: var(--copyLight);
   }
 }
 
@@ -122,10 +106,10 @@ section {
   position: relative;
   text-decoration: none;
   font-size: 23px;
-  color: white;
+  color: var(--copyLight);
   border: unset;
   border-radius: 10px;
-  background-color: var(--green);
+  background-color: var(--primaryColor);
   padding: 15px 30px;
   width: fit-content;
   cursor: pointer;
@@ -134,8 +118,9 @@ section {
   transform-origin: top center;
 
   &:hover {
-    background-color: var(--purple);
-    scale: 1.2;
+    background-color: var(--secondaryColor);
+    color: var(--darkBlueBg);
+    scale: 1.1;
   }
 }
 

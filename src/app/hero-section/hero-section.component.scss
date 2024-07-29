@@ -1,32 +1,40 @@
 section {
-  min-height: calc(100vh - 110px /*header height*/);
+  height: calc(100vh - 110px /*header height*/);
+  max-height: 1080px;
   background-color: var(--darkBlueBg);
-  padding: 100px 100px 0 100px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (max-width: 1250px) {
-    padding: 50px 50px 0 50px;
-  }
-
   @media screen and (max-width: 900px) {
-    padding: 50px 12px 0 12px;
     min-height: calc(100vh - 100px /*header height*/);
     margin-top: 100px !important;
+  }
+
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    height: unset;
   }
 }
 
 .introduction {
   display: flex;
   align-items: center;
-  color: white;
-  justify-content: space-between;
+  gap: 32px;
+  color: var(--copyLight);
+  padding: 100px 100px 0 100px;
+  background-image: url("../../assets/img/tb-tech-bg-jpeg.jpg");
+  background-size: cover;
+
+  @media screen and (max-width: 1400px) {
+    padding: 50px 50px 0 50px;
+  }
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
+    padding: 12px 12px 0 12px;
     gap: 32px;
+    background-image: unset;
   }
 
   .intro-rotate {
@@ -38,10 +46,17 @@ section {
       line-height: 58px;
       padding-top: 5px;
 
-      @media screen and (max-width: 1250px) {
+      @media screen and (max-width: 1400px) {
         font-size: 44px;
         line-height: 50px;
         padding-top: 0;
+        letter-spacing: 2px;
+      }
+
+      @media screen and (max-width: 1100px) {
+        font-size: 38px;
+        line-height: 41px;
+        margin-top: -6px !important;
         letter-spacing: 2px;
       }
 
@@ -49,7 +64,7 @@ section {
         font-size: 23px;
         line-height: 30px;
         padding-top: 5px;
-        letter-spacing: 2px;
+        margin-top: 0 !important;
       }
     }
   }
@@ -60,11 +75,17 @@ section {
       line-height: normal;
       line-height: 40px;
 
-      @media screen and (max-width: 1250px) {
+      @media screen and (max-width: 1400px) {
         font-size: 28px;
         line-height: normal;
         padding-top: 5px;
         letter-spacing: 1.7px;
+        margin-top: -5px !important;
+      }
+
+      @media screen and (max-width: 1100px) {
+        font-size: 23px;
+        padding-top: 0;
         margin-top: -5px !important;
       }
 
@@ -98,9 +119,9 @@ section {
     a {
       text-decoration: none;
       font-size: 23px;
-      color: white;
+      color: var(--copyLight);
       border-radius: 10px;
-      background-color: var(--green);
+      background-color: var(--primaryColor);
       padding: 15px 30px;
       width: fit-content;
       cursor: pointer;
@@ -109,8 +130,9 @@ section {
       transform-origin: top center;
 
       &:hover {
-        background-color: var(--purple);
-        scale: 1.2;
+        background-color: var(--secondaryColor);
+        color: var(--darkBlueBg);
+        scale: 1.1;
       }
     }
 
@@ -119,11 +141,15 @@ section {
         font-size: 43px;
         text-transform: uppercase;
         letter-spacing: 2.5px;
-        color: var(--purple);
+        color: var(--secondaryColor);
 
-        @media screen and (max-width: 1250px) {
+        @media screen and (max-width: 1400px) {
           font-size: 36px;
           letter-spacing: normal;
+        }
+
+        @media screen and (max-width: 1100px) {
+          font-size: 28px;
         }
 
         @media screen and (max-width: 600px) {
@@ -145,41 +171,33 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 450px;
 
-    @media screen and (max-width: 1050px) {
-      max-width: 300px;
-    }
-
-    .shadow-hero-img {
-      position: absolute;
-      width: 160%;
-
-      @media screen and (max-width: 900px) {
-        width: 180%;
-      }
-
-      @media screen and (max-width: 900px) and (orientation: landscape) {
-        width: 80%;
-      }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      background-image: url("../../assets/img/tb-tech-bg-jpeg.jpg");
+      background-size: cover;
     }
 
     .hero-img {
-      height: 50vh;
-      width: 100%;
+      height: 60vh;
+      max-height: 800px;
       object-fit: cover;
       z-index: 1;
 
-      @media screen and (max-width: 1050px) {
-        object-fit: contain;
+      @media screen and (max-width: 1200px) {
+        height: 50vh;
+      }
+
+      @media screen and (max-width: 1100px) {
+        height: 39vh;
       }
 
       @media screen and (max-width: 900px) {
-        height: 30vh;
+        height: 38vh;
       }
 
       @media screen and (max-width: 900px) and (orientation: landscape) {
-        width: 45%;
+        width: 60%;
         height: unset;
       }
     }
@@ -192,7 +210,7 @@ section {
   align-items: center;
   gap: 42px;
   z-index: 100;
-  padding-left: 42px;
+  padding-left: 142px;
   padding-bottom: 32px;
 
   @media screen and (max-width: 900px) {
@@ -203,9 +221,9 @@ section {
 
   .socials-seperator {
     position: absolute;
-    left: -100px;
+    left: 0;
     width: 100px;
-    border: 2px solid var(--purple);
+    border: 2px solid var(--secondaryColor);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 
@@ -217,9 +235,9 @@ section {
   .socials-mail {
     text-decoration: none;
     font-size: 23px;
-    color: white;
+    color: var(--copyLight);
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
       display: none;
     }
   }
@@ -234,7 +252,7 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  color: white;
+  color: var(--secondaryColor);
 
   span {
     writing-mode: vertical-rl;
@@ -252,50 +270,22 @@ section {
 
 .vector {
   position: absolute;
-  top: calc(100px - 270px + 48vh);
-  left: 0;
-  width: 100%;
-  height: 700px;
+
+  left: -100px;
+  width: 100vw;
+  width: 100svw;
+  bottom: -190px;
+  height: 400px;
 
   z-index: 1;
 
-  @media screen and (max-width: 1250px) {
-    top: calc(50px - 270px + 48vh);
-  }
-
-  @media screen and (max-width: 1050px) {
-    top: calc(50px - 270px + 38vh);
+  @media screen and (max-width: 1400px) {
+    left: -50px;
   }
 
   @media screen and (max-width: 900px) {
-    display: none;
-  }
-}
-
-.vector-mobile {
-  display: none;
-
-  @media screen and (max-width: 550px) {
-    top: calc(35vh - 159px) !important;
-  }
-
-  @media screen and (max-width: 900px) and (orientation: landscape) {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .vector {
-    display: none;
-  }
-
-  .vector-mobile {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: calc(35vh - 159px);
-    z-index: 1;
-    width: 900px;
-    height: 400px;
+    left: -12px;
+    height: 140px;
+    bottom: -70px;
   }
 }
