@@ -83,10 +83,18 @@ export class ContactComponent {
   }
 
   /**
-   * resets the mailSend variable
+   * resets the contact form
    */
   resetForm() {
     this.mailSend = false;
+    this.name = '';
+    this.email = '';
+    this.message = '';
+    this.privacyAccepted = false;
+    this.nameFormInteraction = false;
+    this.emailFormInteraction = false;
+    this.messageFormInteraction = false;
+    this.privacyInteraction = false;
     this.updateButtonText();
   }
 
