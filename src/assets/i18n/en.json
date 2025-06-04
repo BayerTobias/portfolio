@@ -98,5 +98,6 @@
   "Thank you!": "Thank you!",
   "namePlaceholder": "Your name",
   "mailPlaceholder": "Your email",
-  "messagePlaceholder": "Your  message"
+  "messagePlaceholder": "Your  message",
+  "FlowSeq is a productivity timer inspired by the Pomodoro technique. It is developed with Angular and uses Angular Signals throughout the application to ensure a reactive and performant user experience. Users can create and customize sequences consisting of work phases, short breaks and long breaks. Each step can be configured with individual durations and rearranged using drag and drop. Data is stored securely in Firebase, allowing persistent session management and seamless usage across devices. The clean user interface and focusoriented workflow make FlowSeq a powerful tool to stay productive and organized.": "FlowSeq is a productivity timer inspired by the Pomodoro technique. It is developed with Angular and uses Angular Signals throughout the application to ensure a reactive and performant user experience. Users can create and customize sequences consisting of work phases, short breaks and long breaks. Each step can be configured with individual durations and rearranged using drag and drop. Data is stored securely in Firebase, allowing persistent session management and seamless usage across devices. The clean user interface and focusoriented workflow make FlowSeq a powerful tool to stay productive and organized."
 }
